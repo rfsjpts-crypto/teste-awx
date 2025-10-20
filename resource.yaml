@@ -1,5 +1,7 @@
 ---
 - name: RouterOS test with network_cli connection
+  collections:
+    - name: community.routeros
   hosts: 192.168.44.60
   gather_facts: false
   tasks:
