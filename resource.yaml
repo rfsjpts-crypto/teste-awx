@@ -6,6 +6,7 @@
   gather_facts: false
 
  vars:
+   - name: Variaveis 
     ansible_user: admin
     ansible_ssh_pass: tamar1550
     ansible_port: 9922
