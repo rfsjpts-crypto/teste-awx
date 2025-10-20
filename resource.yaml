@@ -5,16 +5,7 @@
   hosts: 192.168.44.60
   gather_facts: false
 
- vars:
-   - name: Variaveis 
-    ansible_user: admin
-    ansible_ssh_pass: tamar1550
-    ansible_port: 9922
-    ansible_network_os: community.routeros.routeros
-    ansible_connection: community.routeros.routeros_ssh
-
   tasks:
-
     - name: Gather system resources
       community.routeros.command:
         commands:
