@@ -2,7 +2,7 @@
 - name: Testar conexão com MikroTik
   hosts: 192.168.44.60
   gather_facts: no
-  connection: network_cli
+  connection: community.routeros
 
   tasks:
     - name: Executar comando de teste
