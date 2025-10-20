@@ -1,3 +1,5 @@
 ---
+- name: Teste Colletions
 collections:
-  - community.general
+  - name: community.general
+  - name: ansible.posix
