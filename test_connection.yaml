@@ -3,7 +3,6 @@
   hosts: 192.168.44.60
   gather_facts: no
   connection: community.routeros
-
   tasks:
     - name: Executar comando de teste
       community.routeros.command:
