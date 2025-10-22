@@ -1,3 +1,6 @@
 ---
+- name: Testar conexão com MikroTik
+  hosts: 192.168.44.60
+  gather_facts: no
 collections:
   - community.docker
