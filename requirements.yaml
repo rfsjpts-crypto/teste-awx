@@ -1,5 +1,0 @@
----
-- name: Testar 
-collections:
-  - community.general
-  - community.docker
