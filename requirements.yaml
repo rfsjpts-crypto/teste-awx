@@ -1,16 +1,5 @@
 ---
-- name: Testar conexão com MikroTik
-  hosts: 192.168.44.60
-  gather_facts: no
-  connection: community.routeros
-
-  tasks:
-    - name: Executar comando de teste
-      community.routeros.command:
-        commands:
-          - /system/resource/print
-      register: output
-      
-    - name: Exibir saída
-      ansible.builtin.debug:
-        var: output.stdout_l
+- name: Testar 
+collections:
+  - community.general
+  - community.docker
