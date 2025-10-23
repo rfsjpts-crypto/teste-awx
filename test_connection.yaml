@@ -1,4 +1,14 @@
 ---
-- hosts: 192.168.44.60
-  collections:
-    - community.routeros
+- name: Teste de Conexão com MikroTik
+  hosts: mikrotik-router
+  gather_facts: false
+  tasks:
+    - name: Executar comando de print de recursos
+      community.routeros.routeros_command:
+        commands:
+          - /system/resource/print
+      register: mikrotik_output
+
+    - name: Exibir saída do comando
+      debug:
+        var: mikrotik_output.stdout_lines
