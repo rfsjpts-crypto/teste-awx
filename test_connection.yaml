@@ -1,8 +1,6 @@
 ---
 - name: Teste de Conexão com MikroTik
   hosts: Host-MK
-    collections:
-    - community.routeros
   gather_facts: false
   tasks:
     - name: Executar comando de print de recursos
